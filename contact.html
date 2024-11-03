@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARI Global Service</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/bootstrap-lib/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/font-awesome-lib/icon/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/slick.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+</head>
+
+<body>
+    <div class="site-wrapper">
+        <div class="first_nav_hero_about">
+            <header>
+                <nav class="container navbar navbar-expand-lg ">
+                    <div class="container-fluid">
+                        <a class="nav-logo p-0" href="index-2.html"><img src="images/logo.png" style="width: 100px;" alt="logo"></a>
+                        <button class="navbar-toggle" onclick="openNav()" type="button" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                            <ul class="navbar-nav d-flex justify-content-center align-items-center gap-lg-2 gap-md-2 gap-sm-2 gap-2 mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="file:///D:/Game/aziglobal.biz/aziglobal.biz/index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="file:///D:/Game/aziglobal.biz/aziglobal.biz/Ari%20Global%20Service%20About/aziglobal.net/about.html">About us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="file:///D:/Game/aziglobal.biz/aziglobal.biz/Ari%20Global%20Service%20Feature/aziglobal.net/feature.html">Feature</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="http://localhost/Ari%20Global%20Service/index.html">Login</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="http://localhost/Ari%20Global%20Service/register.html">Register</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="file:///D:/Game/aziglobal.biz/aziglobal.biz/Ari%20Global%20Service%20Contact/aziglobal.net/aziglobal.net/contact.html">Contact</a>
+                                </li>
+
+
+
+                                <!-- <li class="nav-item header_btn ">
+                                    <a class="nav-link nav-hrf btn-hover1" href="#">Login</a>
+                                </li> -->
+                                <li class="nav-item" onclick="open_right_side()">
+                                    <a class="nav-link" href="#"><i class="fa-sharp fa-solid fa-bars"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <aside>
+                    <div id="mySidenav" class="sidenav">
+
+                        <div class="side-nav-logo d-flex justify-content-between align-items-center ps-4 pe-3">
+
+                            <figure class="navbar-brand"><a href="index-2.html"><img src="images/logo.png" style="width: 50px;" alt="img"
+                                class="nav-logo"></a></figure>
+                            <div class="closebtn" onclick="closeNav()"><i class="fa-solid fa-square-xmark side-bar-close-btn"></i></div>
+                        </div>
+                        <ul>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="file:///D:/Game/aziglobal.biz/aziglobal.biz/index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="file:///D:/Game/aziglobal.biz/aziglobal.biz/Ari%20Global%20Service%20About/aziglobal.net/about.html">About us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="file:///D:/Game/aziglobal.biz/aziglobal.biz/Ari%20Global%20Service%20Feature/aziglobal.net/feature.html">Feature</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="http://localhost/Ari%20Global%20Service/index.html">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="http://localhost/Ari%20Global%20Service/register.html">Register</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="file:///D:/Game/aziglobal.biz/aziglobal.biz/Ari%20Global%20Service%20Contact/aziglobal.net/aziglobal.net/contact.html">Contact</a>
+                            </li>
+
+
+                            <li class="nav-item">
+                                <div class="d-flex align-items-center justify-content-between pt-3" id="slid-btn">
+                                    <button class="a-slid">Pages</button>
+                                    <i class="fa-solid fa-caret-down pe-4"></i>
+                                </div>
+                                <ul id="slid-drop" class="myst">
+                                    <li><a href="#">Blogs</a></li>
+                                    <li><a href="#">Plan Pdf</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+                <div class="search" id="search-bar">
+                    <form class="d-flex nav-search">
+                        <input type="text" name="search" placeholder="Enter your text">
+                        <button class="btn-hover1" type="submit">Search</button>
+                    </form>
+                    <button id="remove-btn">
+                        <i class="fa-solid fa-square-xmark "></i>
+                    </button>
+                </div>
+                <section class="right-sidbar" id="right_side">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <a class="p-0 " href="index-2.html"><img src="images/logo.png" style="width: 50px;" alt="logo"></a>
+                        <button class="close_right_sidebar fa-solid fa-xmark" onclick="close_right_sade()"> </button>
+                    </div>
+                    <p class="mt-4 pb-3">ARI Global Services
+                    </p>
+                    <a href="file:///C:/Users/91959/Music/database%20Ari%20Global%20Service/index.html" class="btn-hover1">Login</a>
+                    <hr>
+                    <h5 class="mt-4 mb-4">Connected details:</h5>
+                    <ul class="d-flex flex-column gap-3">
+                        <li>
+                            <a href="#"> <i class="fa-solid fa-phone"></i></a>
+                            <a href="#"><span class="__cf_email__" data-cfemail="">[email&#160;protected]</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                            <!-- <a href="#">+123-456-7890</a> -->
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-clock"></i></a>
+                            <a href="#">24X7</a>
+                        </li>
+                    </ul>
+                    <span class="d-flex gap-4 mt-4">
+                        <a href="" class="p-0"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="" class="p-0"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="" class="p-0"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="" class="p-0"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="" class="p-0"><i class="fa-brands fa-youtube"></i></a>
+                    </span>
+                </section>
+            </header>
+            <div class="container">
+                <div class="contact-hero">
+                    <h2 class="text-center">CONTACT</h2>
+                    <P class="text-center">ARI Global Service</P>
+                </div>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d494874.9208078763!2d121.83566212162243!3d-4.1218880644223725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2c4c07d7496404b7%3A0xe37b4de71badf485!2sIndonesia!5e0!3m2!1sen!2sin!4v1724301470338!5m2!1sen!2sin"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </div>
+        <section class="d-flex justify-content-center">
+            <div class="help position-relative">
+                <div class="container">
+                    <div class="row d-flex gap-lg-5 gap-md-3 gap-sm-4 gap-3 justify-content-center">
+                        <div class="col-lg-5 col-md-5 help-crd1" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                            <h4>HOW CAN WE HELP?</h4>
+                            <P>ARI Global Service</P>
+                            <div class="d-flex gap-4 align-items-center">
+                                <i class="fa-solid fa-house"></i>
+                                <span>Indonesia</span>
+                            </div>
+                            <div class="d-flex gap-4 align-items-center">
+                                <i class="fa-solid fa-phone"></i>
+                                <!-- <span>+123-456-7890</span> -->
+                            </div>
+                            <div class="d-flex gap-4 align-items-center">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span><a href="" class="__cf_email__" data-cfemail="">[email&#160;protected]</a></span>
+                            </div>
+                            <h5>OPERATING HOURS</h5>
+                            <div class="d-flex gap-4 align-items-center">
+                                <i class="fa-solid fa-clock"></i>
+                                <span>Monday To Friday <br> 8:00am to 8:00pm AEDT</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-5 contact-email" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                            <h4>EMAIL US</h4>
+                            <form action="contact1.php" name="form1" method="post" id="footer-sub">
+                                <div class="row justify-content-center gap-3">
+                                    <input type="text" name="name" id="name" class="col-md-5 col-sm-12 col-12" placeholder="Your Name" required>
+                                    <input type="text" name="email" id="email" class="col-md-5 col-sm-12 col-12" placeholder="Email Address" required>
+                                    <input type="text" name="mobile" id="mobile" class="col-md-5 col-sm-12 col-12" placeholder="Phone Number" required>
+                                    <input type="text" name="subject" id="subject" class="col-md-5 col-sm-12 col-12" placeholder="Subject" required>
+                                    <textarea class="col-md-11 col-12" name="message" id="message" cols="30" rows="10" placeholder="Write Your Message"></textarea>
+                                </div>
+                                <div class="d-flex justify-content-center mt-4">
+                                    <button class="" type="submit">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div id="Succes-box"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <h4 class="text-center">SUBSCRIBE OUR NEWSLETTER</h4>
+                <P class="text-center pt-2 pb-3">Get latest News and Updates</P>
+                <form class="d-flex align-items-center justify-content-center" id="footer-sub2">
+                    <div id="Succes-box2"></div>
+                    <div class="d-flex footer-search ">
+                        <input type="email" name="search" placeholder="Enter your Email" required>
+                        <button type="submit" class="btn-hover1">Subscribe</button>
+                    </div>
+                </form>
+                <div class="footer-logo text-center pb-lg-4 pb-md-3 pb-sm-2 pb-4">
+                    <a href="index-2.html">
+                        <figure><img src="images/logo.png" style="width: 100px;" alt="img"></figure>
+                    </a>
+                </div>
+                <ul class="d-flex align-items-center justify-content-center">
+                    <li>
+                        <a href="#">Feature</a>
+                    </li>
+                    <li>
+                        <a href="#">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="#">About us</a>
+                    </li>
+                    <li>
+                        <a href="#">Faq</a>
+                    </li>
+                </ul>
+                <hr>
+                <div class="row footer-nav-icon">
+                    <div class="col-lg-3 col-md-3 d-flex align-items-center justify-content-md-start justify-content-sm-center justify-content-center">
+                        <div class="social-icon d-flex gap-2 justify-content-md-start justify-content-sm-center justify-content-center">
+                            <a href="assets/images/icon/hero.png"><i class="fa-brands fa-facebook-f foot-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-telegram"></i></a>
+                            <a href=""><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 d-flex justify-content-center align-items-center">
+                        <div class=" d-flex gap-3 p-2">
+                            <a href="#">Terms & Condition</a>
+                            <a href="#">Privacy Policy</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3">
+                        <div class="footer_ispsum_slider">
+                            <figure><a href="#"><img src="assets/images/icon/logoipsum-228.png" alt="qr-code"></a>
+                            </figure>
+                            <figure><a href="#"><img src="assets/images/icon/logoipsum-233.png" alt="qr-code"></a>
+                            </figure>
+                            <figure><a href="#"><img src="assets/images/icon/logoipsum-229.png" alt="qr-code"></a>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="Copyright d-flex justify-content-between flex-wrap dir">
+                    <p>Copyright © 2024 ARI Global Services. All Right Reserved.</p>
+                    <p>Powered by ARI Global Services</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+    <button onclick="scrollToTop()" id="backToTopBtn"><i class="fa-solid fa-arrow-turn-up"></i></button>
+
+    <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="assets/js/javascript-lib/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.footer_ispsum_slider').slick({
+
+                arrows: false,
+                dots: false,
+                infinite: true,
+                autoplay: true,
+                autoplaySpeed: 1,
+                speed: 4000,
+                slidesToShow: 2,
+                cssEase: 'linear',
+                pauseOnHover: true,
+                responsive: [{
+                        breakpoint: 900,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            dots: false,
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                            infinite: true,
+                            dots: false,
+                        }
+                    },
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                            infinite: true,
+                            dots: false,
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
+                            infinite: true,
+                            dots: false,
+                        }
+                    },
+                ]
+
+
+
+            });
+        });
+        AOS.init({
+            once: true,
+            duration: 1500,
+        });
+    </script>
+
+</body>
+
+</html>
